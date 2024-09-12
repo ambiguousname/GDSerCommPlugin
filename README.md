@@ -82,7 +82,7 @@ By toggle the radio button the extension will search for available ports and ref
 Create a SerComm node for each port you want to read or write to.
 
 > [!NOTE]
-> SerComm uses the `on_message(message : String)` when a message is recieved.
+> SerComm uses the `on_message(message : String)` when a message is received.
 > In the `_process` function of the node, Godot automatically calls `read_serial` for you, then emits `on_message`. If you want disable automatic reads, you can override `_process`:
 > ```gdscript
 > func _process(delta):
